@@ -43,12 +43,13 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
   }
 
-  h1 {
+  .h1 {
     font-size: 22px;
     margin: 0;
     font-weight: 400;
     line-height: 20px;
-    padding: 20px 2px;
+    padding: 20px;
+    padding-top: 30px;
   }
 
   a {
@@ -79,59 +80,20 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     top: 0;
     bottom: 0;
     margin-left: 6.4px;
+   
   }
 
   .heading {
-    background: #fff;
+    background-color: #fff;
     margin-top: 20px;
     border-bottom: 1px solid #eee;
     height: 60px;
     line-height: 60px;
-    padding:10px;
-    color: green;
-  }
+    }
 </style> 
 <!-- store.css -->
 <style>
-  body {
-    color: #404040;
-    font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    }
-     
-    * {
-    box-sizing: border-box;
-    }
-     
-    .sidebar {
-    position: absolute;
-    width: 33.3333%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    border-right: 1px solid rgba(0, 0, 0, 0.25);
-    }
-     
-    .map {
-    position: absolute;
-    left: 33.3333%;
-    width: 66.6666%;
-    top: 0;
-    bottom: 0;
-    }
-     
-    h1 {
-    font-size: 22px;
-    margin: 0;
-    font-weight: 400;
-    line-height: 20px;
-    padding: 20px 2px;
-    }
-     
-    a {
+     a {
     color: #404040;
     text-decoration: none;
     }
@@ -153,7 +115,7 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     .listings {
     height: 100%;
     overflow: auto;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     }
      
     .listings .item {
@@ -250,7 +212,7 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 <body>
   <div class='sidebar'>
     <div class='heading'>
-      <h1>Our locations</h1>
+      <h1 class="h1">Our locations</h1>
     </div>
     <div id='listings' class='listings'></div>
   </div>
